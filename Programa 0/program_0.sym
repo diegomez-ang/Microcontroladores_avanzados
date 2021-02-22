@@ -1,0 +1,62 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+005     port_a
+006     port_b
+008     port_d
+008     PSP_DATA
+009     port_c
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+021     @delay_ms1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @delay_ms1
+000019  @cinit1
+000019  main
+000023  @cinit2
+
+Project Directory:
+    C:\Users\E531\Desktop\Picc\Programa 0\
+
+Project Files:
+    program_0.c                                             [22-feb.-21 15:48  CRC=FB1F8943]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
+
+Source signature=996E8271
+
+Units:
+    program_0 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   program_0.xsym
+    Errors:      program_0.err
+    Ext Symbols: program_0.esym
+    INHX8:       program_0.hex
+    Symbols:     program_0.sym
+    List:        program_0.lst
+    Debug/COFF:  program_0.cof
+    Project:     program_0.ccspjt
+    Call Tree:   program_0.tre
+    Statistics:  program_0.STA

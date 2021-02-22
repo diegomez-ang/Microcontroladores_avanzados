@@ -1,0 +1,11 @@
+#include <16F877A.h>
+#fuses HS, NOWDT, BROWNOUT, NOLVP
+#use delay (clock = 4000000)
+
+
+void main()
+{
+
+rdgsrsrer
+}
+
