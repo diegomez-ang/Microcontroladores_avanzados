@@ -1,0 +1,48 @@
+
+ROM used:   276/8192 (3%)
+            276/8192 (3%) including unused fragments
+
+            0.4 Average locations per line
+            6.6 Average locations per statement
+
+RAM used:   8/368 (2%) at main() level
+            9/368 (2%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   65    42 100  secuencias.c
+  672     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+----- -----
+  737    42 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   8    1    143  2.2  @delay_ms1
+0    251  91    1   1264  3.9  main
+ Inline         0     67  1.2  @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              42
+    Comments                123
+    Volume (V)              1702
+    Difficulty (D)          7.6
+    Effort to implement (E) 12906
+    Time to implement (T)   12 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   5
+    Maintainability (MI)    71
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   272  1772  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
