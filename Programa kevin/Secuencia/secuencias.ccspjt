@@ -13,11 +13,17 @@ Type=4
 [ProjectLog]
 Days=1
 D1=24-02-2021
-D1_L=4
+D1_L=6
 D1_L1=[52020]Stopped Editing.
 D1_L2=[52462]Started Editing.
 D1_L3=[53540]Stopped Editing.
 D1_L4=[53578]Started Editing.
+D1_L5=[54092]Stopped Editing.
+TotalEdit=18
+TotalDebug=0
+D1_E=18
+D1_D=0
+D1_L6=[54122]Project Closed.
 
 [Opened Files]
 1=..\..\Programa Diego\ccompiler\secuencias.c
