@@ -1,0 +1,26 @@
+[PROJECT]
+Target=secuencias.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=secuencias.c
+[secuencias.c]
+Type=4
+[mru-list]
+1=secuencias.c
+
+[Opened Files]
+1=secuencias.c
+2=
+
+[ProjectLog]
+Days=1
+D1=24-02-2021
+D1_L=3
+D1_L1=[41698]Stopped Editing.
+D1_L2=[41838]Started Editing.
+D1_L3=[42741]Stopped Editing.
+[Units]
+Count=1
+1=secuencias (main)

@@ -1,0 +1,74 @@
+#include <16F877A.h>
+#fuses HS, NOWDT, BROWNOUT, NOLVP
+#use delay (clock = 4000000)
+#byte trisb = 0x86
+#byte portb = 0x06
+
+int tiempo = 1000;
+int i = 0;
+
+void secuencia_1()
+{
+   output_b(0b01010101);
+   delay_ms(tiempo);
+   output_b(0b10101010);
+   delay_ms(tiempo);
+}
+/////////////////////
+void secuencia_2(9
+{
+   output_b(0b00000000);
+   delay_ms(tiempo);
+   output_b(0b11111111);
+   delay_ms(tiempo);
+}
+void secuencia_3()
+{ 
+   output_b(0b10000001);
+   delay_ms(tiempo);
+   output_b(0b11000011);
+   delay_ms(tiempo);
+   ouput_b(0b11100111);
+   delay_ms(tiempo);
+   output_b(0b11111111);
+   delay_ms(tiempo);
+   output_b(0b11100111);
+   delay_ms(tiempo);
+   output_b(0b11000011);
+   delay_ms(tiempo);
+   output_b(0b10000001);
+  delay_ms(tiempo);
+
+
+
+
+void main()
+{
+   bit_clear (trisb,0);
+   bit_clear (portb,0);
+   
+   while(true)
+   {
+   
+      for(i=0, i<5; i++)
+      {      
+         for(i=0; i<3; i++)
+         {
+         secuencia_1();
+         }
+         for(i=0; i<3; i++)
+         {
+         secuencia_2();
+         }
+         for(i=0; i<3; i++)
+         {
+         secuencia_3();
+         }
+         //for(i=0; i<3; i++)
+         //{
+         //secuencia_4();
+        // }
+        
+   }
+
+}

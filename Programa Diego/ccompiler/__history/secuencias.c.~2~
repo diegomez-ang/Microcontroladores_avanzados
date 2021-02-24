@@ -1,0 +1,19 @@
+#include <16F877A.h>
+#fuses HS, NOWDT, BROWNOUT, NOLVP
+#fuses delay (clock = 4000000)
+#byte port_b = 6
+
+void main()
+{
+   bit_clear (trisb,0)
+   bit_clear (portb,0)
+   
+   while(true)
+   {
+      output_high(pin_B0);
+      delay_ms(100);
+      output_low(pin_B0);
+      delay_ms(100);  
+   }
+
+}

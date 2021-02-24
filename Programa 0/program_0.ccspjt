@@ -11,22 +11,31 @@ Type=4
 1=program_0.c
 
 [ProjectLog]
-Days=1
+Days=2
 D1=22-02-2021
-D1_L=6
+D1_L=8
 D1_L1=[55600]Stopped Editing.
-TotalEdit=20
+TotalEdit=29
 TotalDebug=0
-D1_E=20
+D1_E=29
 D1_D=0
 D1_L2=[55623]Started Editing.
 D1_L3=[56153]Stopped Editing.
 D1_L4=[56177]Started Editing.
 D1_L5=[56535]Stopped Editing.
 D1_L6=[56679]Started Editing.
+D1_L7=[57186]Stopped Editing.
+D1_L8=[57186]Project Closed.
+D2=24-02-2021
+D2_L=5
+D2_L1=[38959]Project Opened.
+D2_L2=[39051]Started Editing.
+D2_L3=[39432]Stopped Editing.
+D2_L4=[39486]Started Editing.
+D2_L5=[39776]Project Closed.
 
 [Opened Files]
-1=program_0.c
+1=..\Programa Diego\ccompiler\secuencias.c
 2=
 [Units]
 Count=1
