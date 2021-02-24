@@ -3,8 +3,6 @@
 #use delay (clock = 4000000)
 #byte port_c = 7
 int i = 0;
-
-
 void main()
 {
    set_tris_c(0x00);
@@ -17,45 +15,45 @@ void main()
          ///secuencia 1
          for(i=0;i<2;i++)
          {
-            output_c(0x0f);
+            output_high(0x0f);
             delay_ms(1000);
-            output_c(0xf0);
+            output_high(0xf0);
             delay_ms(1000);
          }
          //secuencia 2 
          for(i=0;i<2;i++)
          {
-            output_c(0xcc);
+            output_high(0xcc);
             delay_ms(1000);
-            output_c(0x33);
+            output_high(0x33);
             delay_ms(1000);
          }
          ///secuencia 3
          for(i=0;i<2;i++)
          {
-            output_c(0x01);
+            output_high(0x01);
             delay_ms(1000);
-            output_c(0x03);
+            output_high(0x03);
             delay_ms(1000);
-            output_c(0x07);
+            output_high(0x07);
             delay_ms(1000);
-            output_c(0x0f);
+            output_high(0x0f);
             delay_ms(1000);
-            output_c(0x1f);
+            output_high(0x1f);
             delay_ms(1000);
-            output_c(0x3f);
+            output_high(0x3f);
             delay_ms(1000);
-            output_c(0x7f);
+            output_high(0x7f);
             delay_ms(1000);
-            output_c(0xff);
+            output_high(0xff);
             delay_ms(1000);
          }
          //secuencia 4
-         for(i=0; i<2;i++)
+         for(i=0; i<2;i++
          {
-            output_c(0x00);
+            output_high(0x00);
             delay_ms(1000);
-            output_c(0xff);
+            output_high(0xff);
             delay_ms(1000);
          }         
       }

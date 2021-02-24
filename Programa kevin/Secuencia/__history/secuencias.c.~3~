@@ -1,0 +1,21 @@
+#include <16F877A.h>
+#fuses HS, NOWDT, BROWNOUT, NOLVP
+#use delay (clock = 4000000)
+#byte port_c = 7
+int i = 0;
+void main()
+{
+   set_tris_c(0x00);
+   port_c=(0x00);
+   
+   while (true)
+   {
+      for(i=0; i=5;i ++)
+      {
+         output_c(0xff);
+         delay_ms(500);
+         output_c(0x00);
+         delay_ms(500);
+      }
+   }
+   
