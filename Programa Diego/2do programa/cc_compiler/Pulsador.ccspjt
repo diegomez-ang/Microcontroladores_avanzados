@@ -1,0 +1,46 @@
+[PROJECT]
+Target=Pulsador.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=Pulsador.c
+[Pulsador.c]
+Type=4
+[mru-list]
+1=Pulsador.c
+
+[ProjectLog]
+Days=2
+D1=03-03-2021
+D1_L=4
+D1_L1=[59174]Stopped Editing.
+D1_L2=[59248]Started Editing.
+D1_L3=[59552]Stopped Editing.
+TotalEdit=8
+TotalDebug=0
+D1_E=8
+D1_D=0
+D1_L4=[59552]Project Closed.
+D2=04-03-2021
+D2_L=13
+D2_L1=[51934]Project Opened.
+D2_L2=[52175]Started Editing.
+D2_L3=[52737]Stopped Editing.
+D2_L4=[53182]Started Editing.
+D2_L5=[53798]Stopped Editing.
+D2_L6=[53873]Started Editing.
+D2_L7=[54423]Stopped Editing.
+D2_L8=[54458]Started Editing.
+D2_L9=[55427]Stopped Editing.
+D2_L10=[55501]Started Editing.
+D2_L11=[58576]Stopped Editing.
+D2_L12=[58622]Started Editing.
+D2_L13=[58841]Project Closed.
+
+[Opened Files]
+1=Pulsador.c
+2=
+[Units]
+Count=1
+1=Pulsador (main)

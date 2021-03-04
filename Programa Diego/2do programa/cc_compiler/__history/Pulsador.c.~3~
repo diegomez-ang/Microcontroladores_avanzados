@@ -1,0 +1,9 @@
+#include <16F877A.h>
+#fuses HS, NOWDT, BROWNOUT, NOLVP
+#use delay (clock = 4000000)
+#byte trisa = 0x85
+#byte porta = 0x05
+#byte trisb = 0x86
+#byte portb = 0x06
+
+
