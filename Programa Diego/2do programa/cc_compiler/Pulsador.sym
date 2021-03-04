@@ -1,0 +1,101 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+005     port_a
+006     port_b
+007     port_c
+008     port_d
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-027 @sprintf_string
+028     tiempo
+029     contador
+02A     @delay_ms1.P1
+02A-02D @PRINTF_L32D_923FPFPF.P2
+02A     @PRINTF_D_9600_62_63.P3
+02A     MAIN.@SCRATCH1
+02A     @PSTRINGC7_9600_62_63.@SCRATCH1
+02B     @PRINTF_D_9600_62_63.P1
+02B     @PSTRINGC7_9600_62_63.@SCRATCH2
+02C     @PRINTF_D_9600_62_63.@SCRATCH1
+02C     @PSTRINGC7_9600_62_63.@SCRATCH3
+02D     @PRINTF_D_9600_62_63.@SCRATCH2
+02D     @PSTRINGC7_9600_62_63.@SCRATCH4
+02E     @PRINTF_L32D_923FPFPF.P1
+02E     @PRINTF_D_9600_62_63.@SCRATCH3
+02F     @PRINTF_D_9600_62_63.@SCRATCH4
+030     @DIV88.P1
+031     @DIV88.P1
+032     @DIV88.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const984.call
+00000B  @const986.call
+000012  @const987.call
+000019  @const988.call
+000020  @DIV88
+000035  @PRINTF_D_9600_62_63
+000092  @PSTRINGC7_9600_62_63
+0000EA  @delay_ms1
+0000FF  secuencia_1
+000112  secuencia_2
+000124  secuencia_3
+00015F  secuencia_4
+0001DA  MAIN
+0001DA  @cinit1
+0001F1  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Programa Diego\2do programa\cc_compiler\
+
+Project Files:
+    Pulsador.c                                              [04-mar.-21 16:11  CRC=4D1EE02D]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun.-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [10-abr.-14 09:04  CRC=662B2714]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\input.c [01-may.-13 13:38  CRC=8C3C8665]
+
+Source signature=DCECE87C
+
+Units:
+    Pulsador (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Pulsador.xsym
+    Errors:      Pulsador.err
+    Ext Symbols: Pulsador.esym
+    INHX8:       Pulsador.hex
+    Symbols:     Pulsador.sym
+    List:        Pulsador.lst
+    Debug/COFF:  Pulsador.cof
+    Project:     Pulsador.ccspjt
+    Call Tree:   Pulsador.tre
+    Statistics:  Pulsador.STA

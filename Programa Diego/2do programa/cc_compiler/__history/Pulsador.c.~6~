@@ -1,0 +1,159 @@
+#include <16F877A.h>
+#fuses HS, NOWDT, BROWNOUT, NOLVP
+#use delay (clock = 4000000)
+#byte trisa = 0x85
+#byte porta = 0x05
+#byte trisb = 0x86
+#byte portb = 0x06
+#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7)
+#include <stdlib.h>
+#include <input.c>
+
+
+int tiempo = 1000;
+int i = 0;
+
+void secuencia_1()
+{
+   output_b(0b01010101);
+   delay_ms(tiempo);
+   output_b(0b10101010);
+   delay_ms(tiempo);
+}
+//------------------------------------
+void secuencia_2()
+{
+   output_b(0b00000000);
+   delay_ms(tiempo);
+   output_b(0b11111111);
+   delay_ms(tiempo);
+}
+
+///-------------------------------
+void secuencia_3()
+{ 
+   output_b(0b10000001);
+   delay_ms(tiempo);
+   output_b(0b11000011);
+   delay_ms(tiempo);
+   output_b(0b11100111);
+   delay_ms(tiempo);
+   output_b(0b11111111);
+   delay_ms(tiempo);
+   output_b(0b11100111);
+   delay_ms(tiempo);
+   output_b(0b11000011);
+   delay_ms(tiempo);
+   output_b(0b10000001);
+   delay_ms(tiempo);
+}
+//----------------------------------
+void secuencia_4()
+{
+   output_b(0b10000000);
+   delay_ms(tiempo);
+   output_b(0b01000000);
+   delay_ms(tiempo);
+   output_b(0b00100000);
+   delay_ms(tiempo);
+   output_b(0b00010000);
+   delay_ms(tiempo);
+   output_b(0b00001000);
+   delay_ms(tiempo);
+   output_b(0b00000100);
+   delay_ms(tiempo);
+   output_b(0b00000010);
+   delay_ms(tiempo);
+   output_b(0b00000001);
+   delay_ms(tiempo);
+   output_b(0b00000010);
+   delay_ms(tiempo);
+   output_b(0b00000100);
+   delay_ms(tiempo);
+   output_b(0b00001000);
+   delay_ms(tiempo);
+   output_b(0b00010000);
+   delay_ms(tiempo);
+   output_b(0b00100000);
+   delay_ms(tiempo);
+   output_b(0b01000000);
+   delay_ms(tiempo);
+   output_b(0b10000000);
+   delay_ms(tiempo);
+}
+
+/*
+
+int contador = 0;
+
+//--------
+
+while(input(pin_a0)==0);
+
+-------//////
+
+//preguntar por el pin
+ if(input(pin_a0)==0){
+   //enclavamiento poner un contador
+   contador++;
+   printf(" % d, contador );
+ }
+ 
+ if(contador == 1){
+   secuencia_1();
+ }
+ else if(contador == 2){
+   secuencia_2();
+ }
+ else if(contador == 3){
+   secuencia_3();
+ }
+ else if(contador == 4){
+   secuencia_4(); 
+ }
+ else if(contador ==5){
+   contador == 1;
+ }
+
+*/
+
+
+
+void main()
+{
+   bit_clear (trisb,0);
+   bit_clear (portb,0);
+   trisa = 0xFF;
+   
+   while(true)
+   {   
+   
+      if(){
+      
+      }
+      for(i=0; i<5; i++)
+      {      
+         for(i=0; i<4; i++)
+         {
+         secuencia_1();
+         }
+         for(i=0; i<4; i++)
+         {
+         secuencia_2();
+         }
+         for(i=0; i<4; i++)
+         {
+         secuencia_3();
+         }
+         for(i=0; i<4; i++)
+         {
+         secuencia_4();
+         }
+    bit_clear (portb,0);
+    delay_ms(5000);    
+   }
+
+}
+}
+
+

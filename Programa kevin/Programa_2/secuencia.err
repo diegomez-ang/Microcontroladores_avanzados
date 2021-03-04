@@ -1,0 +1,105 @@
+*** Error 12 "secuencia.c" Line 41(21,22): Undefined identifier  -- secuencia_1
+*** Error 12 "secuencia.c" Line 45(21,22): Undefined identifier  -- secuencia_2
+*** Error 12 "secuencia.c" Line 49(21,22): Undefined identifier  -- secuencia_3
+*** Error 12 "secuencia.c" Line 53(21,22): Undefined identifier  -- secuencia_4
+*** Error 23 "C:\Program Files (x86)\PICC\Devices\16F877A.h" Line 11(8,9): Can not set this option this far into the code
+*** Error 48 "C:\Program Files (x86)\PICC\Devices\16F877A.h" Line 22(46,47): Expecting a (
+*** Error 28 "C:\Program Files (x86)\PICC\Devices\16F877A.h" Line 630(2,7): Expecting an identifier
+--- Info 300 "secuencia.c" Line 19(5,11): More info:   First Declaration of tiempo
+*** Error 31 "secuencia.c" Line 86(5,11): Identifier is already used in this scope
+*** Error 43 "secuencia.c" Line 86(14,18): Expecting a declaration
+*** Error 43 "secuencia.c" Line 86(18,19): Expecting a declaration
+--- Info 300 "secuencia.c" Line 20(5,13): More info:   First Declaration of contador
+*** Error 31 "secuencia.c" Line 87(5,13): Identifier is already used in this scope
+*** Error 43 "secuencia.c" Line 87(16,17): Expecting a declaration
+*** Error 43 "secuencia.c" Line 87(17,18): Expecting a declaration
+--- Info 300 "secuencia.c" Line 23(6,10): More info:   First Declaration of MAIN
+*** Error 31 "secuencia.c" Line 161(11,12): Identifier is already used in this scope
+*** Error 28 "secuencia.c" Line 164(22,23): Expecting an identifier
+*** Error 43 "secuencia.c" Line 164(24,25): Expecting a declaration
+*** Error 28 "secuencia.c" Line 165(22,23): Expecting an identifier
+*** Error 43 "secuencia.c" Line 165(24,25): Expecting a declaration
+*** Error 28 "secuencia.c" Line 167(15,19): Expecting an identifier
+*** Error 43 "secuencia.c" Line 167(20,21): Expecting a declaration
+*** Error 48 "secuencia.c" Line 168(4,10): Expecting a (
+*** Error 43 "secuencia.c" Line 168(11,15): Expecting a declaration
+*** Error 43 "secuencia.c" Line 168(15,16): Expecting a declaration
+*** Error 43 "secuencia.c" Line 170(4,9): Expecting a declaration
+*** Error 43 "secuencia.c" Line 170(9,10): Expecting a declaration
+*** Error 43 "secuencia.c" Line 170(10,15): Expecting a declaration
+*** Error 43 "secuencia.c" Line 170(14,15): Expecting a declaration
+*** Error 43 "secuencia.c" Line 170(15,16): Expecting a declaration
+*** Error 43 "secuencia.c" Line 171(7,9): Expecting a declaration
+*** Error 43 "secuencia.c" Line 171(9,10): Expecting a declaration
+*** Error 28 "secuencia.c" Line 171(16,23): Expecting an identifier
+*** Error 43 "secuencia.c" Line 171(23,25): Expecting a declaration
+*** Error 43 "secuencia.c" Line 171(25,26): Expecting a declaration
+*** Error 43 "secuencia.c" Line 171(26,27): Expecting a declaration
+*** Error 43 "secuencia.c" Line 172(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 173(10,15): Expecting a declaration
+*** Error 43 "secuencia.c" Line 173(15,16): Expecting a declaration
+*** Error 28 "secuencia.c" Line 173(22,29): Expecting an identifier
+*** Error 43 "secuencia.c" Line 173(29,31): Expecting a declaration
+*** Error 43 "secuencia.c" Line 173(31,32): Expecting a declaration
+*** Error 43 "secuencia.c" Line 173(32,33): Expecting a declaration
+*** Error 43 "secuencia.c" Line 173(33,34): Expecting a declaration
+*** Error 48 "secuencia.c" Line 174(10,18): Expecting a (
+*** Error 43 "secuencia.c" Line 174(20,21): Expecting a declaration
+*** Error 28 "secuencia.c" Line 175(23,24): Expecting an identifier
+*** Error 48 "secuencia.c" Line 175(25,33): Expecting a (
+*** Error 43 "secuencia.c" Line 175(34,35): Expecting a declaration
+*** Error 43 "secuencia.c" Line 176(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 177(7,9): Expecting a declaration
+*** Error 43 "secuencia.c" Line 177(9,10): Expecting a declaration
+*** Error 48 "secuencia.c" Line 177(10,18): Expecting a (
+*** Error 43 "secuencia.c" Line 177(22,23): Expecting a declaration
+*** Error 43 "secuencia.c" Line 177(23,24): Expecting a declaration
+*** Error 43 "secuencia.c" Line 177(24,25): Expecting a declaration
+*** Error 28 "secuencia.c" Line 178(31,32): Expecting an identifier
+*** Error 43 "secuencia.c" Line 178(32,33): Expecting a declaration
+*** Error 43 "secuencia.c" Line 180(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 181(7,11): Expecting a declaration
+*** Error 43 "secuencia.c" Line 181(12,14): Expecting a declaration
+*** Error 43 "secuencia.c" Line 181(14,15): Expecting a declaration
+*** Error 48 "secuencia.c" Line 181(15,23): Expecting a (
+*** Error 43 "secuencia.c" Line 181(27,28): Expecting a declaration
+*** Error 43 "secuencia.c" Line 181(28,29): Expecting a declaration
+*** Error 43 "secuencia.c" Line 181(29,30): Expecting a declaration
+*** Error 28 "secuencia.c" Line 182(31,32): Expecting an identifier
+*** Error 43 "secuencia.c" Line 182(32,33): Expecting a declaration
+*** Error 43 "secuencia.c" Line 184(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 185(7,11): Expecting a declaration
+*** Error 43 "secuencia.c" Line 185(12,14): Expecting a declaration
+*** Error 43 "secuencia.c" Line 185(14,15): Expecting a declaration
+*** Error 48 "secuencia.c" Line 185(15,23): Expecting a (
+*** Error 43 "secuencia.c" Line 185(27,28): Expecting a declaration
+*** Error 43 "secuencia.c" Line 185(28,29): Expecting a declaration
+*** Error 43 "secuencia.c" Line 185(29,30): Expecting a declaration
+*** Error 28 "secuencia.c" Line 186(31,32): Expecting an identifier
+*** Error 43 "secuencia.c" Line 186(32,33): Expecting a declaration
+*** Error 43 "secuencia.c" Line 188(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 189(7,11): Expecting a declaration
+*** Error 43 "secuencia.c" Line 189(12,14): Expecting a declaration
+*** Error 43 "secuencia.c" Line 189(14,15): Expecting a declaration
+*** Error 48 "secuencia.c" Line 189(15,23): Expecting a (
+*** Error 43 "secuencia.c" Line 189(27,28): Expecting a declaration
+*** Error 43 "secuencia.c" Line 189(28,29): Expecting a declaration
+*** Error 43 "secuencia.c" Line 189(29,30): Expecting a declaration
+*** Error 28 "secuencia.c" Line 190(31,32): Expecting an identifier
+*** Error 43 "secuencia.c" Line 190(32,33): Expecting a declaration
+*** Error 43 "secuencia.c" Line 192(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 193(7,11): Expecting a declaration
+*** Error 43 "secuencia.c" Line 193(12,14): Expecting a declaration
+*** Error 43 "secuencia.c" Line 193(14,15): Expecting a declaration
+*** Error 48 "secuencia.c" Line 193(15,23): Expecting a (
+*** Error 43 "secuencia.c" Line 193(27,28): Expecting a declaration
+*** Error 43 "secuencia.c" Line 193(28,29): Expecting a declaration
+*** Error 43 "secuencia.c" Line 193(29,30): Expecting a declaration
+*** Error 48 "secuencia.c" Line 194(10,18): Expecting a (
+*** Error 43 "secuencia.c" Line 194(20,21): Expecting a declaration
+*** Error 43 "secuencia.c" Line 194(21,22): Expecting a declaration
+*** Error 43 "secuencia.c" Line 195(7,8): Expecting a declaration
+*** Error 43 "secuencia.c" Line 196(4,5): Expecting a declaration
+*** Error 43 "secuencia.c" Line 197(1,2): Expecting a declaration
+      100 Errors,  0 Warnings.
+Build Failed.
