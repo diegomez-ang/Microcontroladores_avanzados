@@ -1,0 +1,366 @@
+CCS PCM C Compiler, Version 5.025, 3239               04-mar.-21 19:15
+
+               Filename:   C:\Users\DAGA7\Desktop\Micros avanzados\Microcontroladores_avanzados\Programa kevin\Programa_2\secuencia.lst
+
+               ROM used:   216 words (3%)
+                           Largest free fragment is 2048
+               RAM used:   8 (2%) at main() level
+                           8 (2%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   019
+0003:  NOP
+.................... #include <16F877A.h> 
+.................... //////////// Standard Header file for the PIC16F877A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F877A 
+*
+00CF:  BCF    0A.0
+00D0:  BCF    0A.1
+00D1:  BCF    0A.2
+00D2:  ADDWF  02,F
+00D3:  GOTO   03D
+00D4:  GOTO   052
+00D5:  GOTO   067
+00D6:  GOTO   0B8
+00D7:  GOTO   0CC
+....................  
+.................... #list 
+....................  
+.................... #fuses HS, NOWDT, BROWNOUT, NOLVP 
+.................... #use delay (clock = 4000000) 
+*
+0004:  MOVLW  22
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   018
+000A:  MOVLW  01
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  4A
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  GOTO   016
+0016:  DECFSZ 00,F
+0017:  GOTO   00A
+0018:  RETURN
+.................... //#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7) 
+.................... //#include <stdlib.h> 
+.................... //#include <input.c> 
+....................  
+.................... #byte port_a= 5  
+.................... #byte port_b= 6  
+.................... #byte port_c= 7  
+.................... #byte port_d= 8 
+....................  
+.................... int count = 0; 
+.................... //int i = 0; 
+....................  
+....................  
+....................  
+.................... void main() 
+0019:  MOVF   03,W
+001A:  ANDLW  1F
+001B:  MOVWF  03
+001C:  CLRF   20
+001D:  MOVLW  FF
+001E:  MOVWF  21
+001F:  BSF    03.5
+0020:  BSF    1F.0
+0021:  BSF    1F.1
+0022:  BSF    1F.2
+0023:  BCF    1F.3
+0024:  MOVLW  07
+0025:  MOVWF  1C
+0026:  BCF    03.7
+.................... { 
+....................    set_tris_d(0x00); 
+0027:  MOVLW  00
+0028:  MOVWF  08
+....................    port_d=(0x00); 
+0029:  BCF    03.5
+002A:  CLRF   08
+....................     
+....................    while(true){ 
+....................       if(input(pin_a2)==0) 
+002B:  BSF    03.5
+002C:  BSF    05.2
+002D:  BCF    03.5
+002E:  BTFSC  05.2
+002F:  GOTO   036
+....................       { 
+....................          while(input(pin_a2)==0); 
+0030:  BSF    03.5
+0031:  BSF    05.2
+0032:  BCF    03.5
+0033:  BTFSS  05.2
+0034:  GOTO   030
+....................          count++; 
+0035:  INCF   20,F
+....................                        
+....................       } 
+....................        
+....................       switch(count){ 
+0036:  MOVLW  01
+0037:  SUBWF  20,W
+0038:  ADDLW  FB
+0039:  BTFSC  03.0
+003A:  GOTO   0CD
+003B:  ADDLW  05
+003C:  GOTO   0CF
+....................          case 1: 
+....................             output_c(0x0f); 
+003D:  MOVLW  00
+003E:  MOVWF  21
+003F:  BSF    03.5
+0040:  CLRF   07
+0041:  MOVLW  0F
+0042:  BCF    03.5
+0043:  MOVWF  07
+....................             delay_ms(100); 
+0044:  MOVLW  64
+0045:  MOVWF  22
+0046:  CALL   004
+....................             output_c(0xf0); 
+0047:  MOVLW  00
+0048:  MOVWF  21
+0049:  BSF    03.5
+004A:  CLRF   07
+004B:  MOVLW  F0
+004C:  BCF    03.5
+004D:  MOVWF  07
+....................             delay_ms(100); 
+004E:  MOVLW  64
+004F:  MOVWF  22
+0050:  CALL   004
+....................             break; 
+0051:  GOTO   0CD
+....................          case 2: 
+....................             output_c(0xcc); 
+0052:  MOVLW  00
+0053:  MOVWF  21
+0054:  BSF    03.5
+0055:  CLRF   07
+0056:  MOVLW  CC
+0057:  BCF    03.5
+0058:  MOVWF  07
+....................             delay_ms(100); 
+0059:  MOVLW  64
+005A:  MOVWF  22
+005B:  CALL   004
+....................             output_c(0x33); 
+005C:  MOVLW  00
+005D:  MOVWF  21
+005E:  BSF    03.5
+005F:  CLRF   07
+0060:  MOVLW  33
+0061:  BCF    03.5
+0062:  MOVWF  07
+....................             delay_ms(100); 
+0063:  MOVLW  64
+0064:  MOVWF  22
+0065:  CALL   004
+....................             break; 
+0066:  GOTO   0CD
+....................          case 3: 
+....................             output_c(0x01); 
+0067:  MOVLW  00
+0068:  MOVWF  21
+0069:  BSF    03.5
+006A:  CLRF   07
+006B:  MOVLW  01
+006C:  BCF    03.5
+006D:  MOVWF  07
+....................             delay_ms(100); 
+006E:  MOVLW  64
+006F:  MOVWF  22
+0070:  CALL   004
+....................             output_c(0x03); 
+0071:  MOVLW  00
+0072:  MOVWF  21
+0073:  BSF    03.5
+0074:  CLRF   07
+0075:  MOVLW  03
+0076:  BCF    03.5
+0077:  MOVWF  07
+....................             delay_ms(100); 
+0078:  MOVLW  64
+0079:  MOVWF  22
+007A:  CALL   004
+....................             output_c(0x07); 
+007B:  MOVLW  00
+007C:  MOVWF  21
+007D:  BSF    03.5
+007E:  CLRF   07
+007F:  MOVLW  07
+0080:  BCF    03.5
+0081:  MOVWF  07
+....................             delay_ms(100); 
+0082:  MOVLW  64
+0083:  MOVWF  22
+0084:  CALL   004
+....................             output_c(0x0f); 
+0085:  MOVLW  00
+0086:  MOVWF  21
+0087:  BSF    03.5
+0088:  CLRF   07
+0089:  MOVLW  0F
+008A:  BCF    03.5
+008B:  MOVWF  07
+....................             delay_ms(100); 
+008C:  MOVLW  64
+008D:  MOVWF  22
+008E:  CALL   004
+....................             output_c(0x1f); 
+008F:  MOVLW  00
+0090:  MOVWF  21
+0091:  BSF    03.5
+0092:  CLRF   07
+0093:  MOVLW  1F
+0094:  BCF    03.5
+0095:  MOVWF  07
+....................             delay_ms(100); 
+0096:  MOVLW  64
+0097:  MOVWF  22
+0098:  CALL   004
+....................             output_c(0x3f); 
+0099:  MOVLW  00
+009A:  MOVWF  21
+009B:  BSF    03.5
+009C:  CLRF   07
+009D:  MOVLW  3F
+009E:  BCF    03.5
+009F:  MOVWF  07
+....................             delay_ms(100); 
+00A0:  MOVLW  64
+00A1:  MOVWF  22
+00A2:  CALL   004
+....................             output_c(0x7f); 
+00A3:  MOVLW  00
+00A4:  MOVWF  21
+00A5:  BSF    03.5
+00A6:  CLRF   07
+00A7:  MOVLW  7F
+00A8:  BCF    03.5
+00A9:  MOVWF  07
+....................             delay_ms(100); 
+00AA:  MOVLW  64
+00AB:  MOVWF  22
+00AC:  CALL   004
+....................             output_c(0xff); 
+00AD:  MOVLW  00
+00AE:  MOVWF  21
+00AF:  BSF    03.5
+00B0:  CLRF   07
+00B1:  MOVLW  FF
+00B2:  BCF    03.5
+00B3:  MOVWF  07
+....................             delay_ms(100); 
+00B4:  MOVLW  64
+00B5:  MOVWF  22
+00B6:  CALL   004
+....................              
+....................             break; 
+00B7:  GOTO   0CD
+....................          case 4: 
+....................             output_c(0x00); 
+00B8:  MOVLW  00
+00B9:  MOVWF  21
+00BA:  BSF    03.5
+00BB:  CLRF   07
+00BC:  BCF    03.5
+00BD:  CLRF   07
+....................             delay_ms(100); 
+00BE:  MOVLW  64
+00BF:  MOVWF  22
+00C0:  CALL   004
+....................             output_c(0xff); 
+00C1:  MOVLW  00
+00C2:  MOVWF  21
+00C3:  BSF    03.5
+00C4:  CLRF   07
+00C5:  MOVLW  FF
+00C6:  BCF    03.5
+00C7:  MOVWF  07
+....................             delay_ms(100);             
+00C8:  MOVLW  64
+00C9:  MOVWF  22
+00CA:  CALL   004
+....................             break; 
+00CB:  GOTO   0CD
+....................          case 5: 
+....................             count = 0; 
+00CC:  CLRF   20
+....................             break; 
+....................           
+....................       } 
+00CD:  GOTO   02B
+....................    
+....................        
+....................        
+....................        
+....................       /* 
+....................       if(count == 1){ 
+....................          printf("Secuencia 1 "); 
+....................           
+....................          //secuencia------ 
+....................              
+....................            for(i=0;i<3;i++){ 
+....................             output_d(0x0f); 
+....................             delay_ms(1000); 
+....................             output_d(0xf0); 
+....................             delay_ms(1000); 
+....................            } 
+....................         
+....................       } 
+....................       else if(count == 2){ 
+....................          printf("Secuencia 2 "); 
+....................           
+....................          // secuencia ------------- 
+....................          for(i=0;i>3;i++){ 
+....................             output_d(0xcc); 
+....................             delay_ms(1000); 
+....................             output_d(0x33); 
+....................             delay_ms(1000); 
+....................          } 
+....................           
+....................       } 
+....................       else if(count == 3){ 
+....................          printf("Secuencia 3 "); 
+....................             // secuencia ---------- 
+....................           
+....................       } 
+....................       else if(count == 4){ 
+....................          printf("Secuencia 4 "); 
+....................           
+....................       } 
+....................       else if(count == 5){ 
+....................          count= 1; 
+....................       }   */  
+....................    } 
+....................  
+....................  
+.................... } 
+00CE:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

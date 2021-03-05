@@ -30,9 +30,9 @@ void main()
       
       switch(count){
          case 1:
-            output_c(0x0f);
+            output_d(0x0f);
             delay_ms(100);
-            output_c(0xf0);
+            output_d(0xf0);
             delay_ms(100);
             break;
          case 2:
@@ -43,28 +43,25 @@ void main()
             break;
          case 3:
             output_c(0x01);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0x03);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0x07);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0x0f);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0x1f);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0x3f);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0x7f);
-            delay_ms(100);
+            delay_ms(1000);
             output_c(0xff);
-            delay_ms(100);
-            
+            delay_ms(1000);
+            printf("Secuencia 3 ");
             break;
          case 4:
-            output_c(0x00);
-            delay_ms(100);
-            output_c(0xff);
-            delay_ms(100);            
+            printf("Secuencia 4 ");
             break;
          case 5:
             count = 0;

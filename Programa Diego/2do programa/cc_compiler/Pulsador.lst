@@ -1,8 +1,8 @@
-CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
+CCS PCM C Compiler, Version 5.025, 3239               04-mar.-21 19:15
 
-               Filename:   C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Programa Diego\2do programa\cc_compiler\Pulsador.lst
+               Filename:   C:\Users\DAGA7\Desktop\Micros avanzados\Microcontroladores_avanzados\Programa Diego\2do programa\cc_compiler\Pulsador.lst
 
-               ROM used:   590 words (7%)
+               ROM used:   588 words (7%)
                            Largest free fragment is 2048
                RAM used:   16 (4%) at main() level
                            28 (8%) worst case
@@ -2501,7 +2501,7 @@ CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
 ....................  
 ....................  
 ....................  
-.................... int tiempo = 1000; 
+.................... int tiempo = 100; 
 .................... int contador = 0; 
 ....................  
 .................... /* ------------------ SECUENCIA 1 ------------*/ 
@@ -2810,7 +2810,7 @@ CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
 01E4:  MOVWF  18
 01E5:  CLRF   27
 01E6:  CLRF   26
-01E7:  MOVLW  E8
+01E7:  MOVLW  64
 01E8:  MOVWF  28
 01E9:  CLRF   29
 01EA:  BSF    03.5
@@ -2882,7 +2882,7 @@ CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
 ....................          secuencia_1(); 
 021D:  GOTO   0FF
 ....................       } 
-021E:  GOTO   24C
+021E:  GOTO   24A
 ....................       else if(contador == 2){ 
 021F:  MOVF   29,W
 0220:  SUBLW  02
@@ -2899,7 +2899,7 @@ CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
 ....................          secuencia_2(); 
 022A:  GOTO   112
 ....................       } 
-022B:  GOTO   24C
+022B:  GOTO   24A
 ....................       else if(contador == 3){ 
 022C:  MOVF   29,W
 022D:  SUBLW  03
@@ -2916,7 +2916,7 @@ CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
 ....................          secuencia_3(); 
 0237:  GOTO   124
 ....................       } 
-0238:  GOTO   24C
+0238:  GOTO   24A
 ....................       else if(contador == 4){ 
 0239:  MOVF   29,W
 023A:  SUBLW  04
@@ -2933,21 +2933,19 @@ CCS PCM C Compiler, Version 5.025, 51760               04-mar.-21 16:13
 ....................          secuencia_4(); 
 0244:  GOTO   15F
 ....................       } 
-0245:  GOTO   24C
+0245:  GOTO   24A
 ....................       else if(contador == 5){ 
 0246:  MOVF   29,W
 0247:  SUBLW  05
-0248:  BTFSS  03.2
-0249:  GOTO   24C
-....................          contador= 1; 
-024A:  MOVLW  01
-024B:  MOVWF  29
+0248:  BTFSC  03.2
+....................          contador= 0; 
+0249:  CLRF   29
 ....................       }     
-024C:  GOTO   1FC
+024A:  GOTO   1FC
 ....................    } 
 .................... } 
 ....................  
-024D:  SLEEP
+024B:  SLEEP
 ....................  
 ....................  
 
