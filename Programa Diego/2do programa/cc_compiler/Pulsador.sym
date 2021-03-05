@@ -63,18 +63,18 @@ ROM Allocation:
 0136  StrtolGO
 
 Project Directory:
-    C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Programa Diego\2do programa\cc_compiler\
+    C:\Users\DAGA7\Desktop\Micros avanzados\Microcontroladores_avanzados\Programa Diego\2do programa\cc_compiler\
 
 Project Files:
-    Pulsador.c                                              [04-mar.-21 16:11  CRC=4D1EE02D]
-    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
-    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun.-11 14:39  CRC=0B6669CF]
-    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]
-    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [10-abr.-14 09:04  CRC=662B2714]
-    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 13:55  CRC=2D1F019F]
-    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\input.c [01-may.-13 13:38  CRC=8C3C8665]
+    Pulsador.c                                              [04-mar.-21 19:15  CRC=7EF0BFF7]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun.-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [10-abr.-14 09:04  CRC=662B2714]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\input.c [01-may.-13 13:38  CRC=8C3C8665]
 
-Source signature=DCECE87C
+Source signature=0EBEC846
 
 Units:
     Pulsador (main)

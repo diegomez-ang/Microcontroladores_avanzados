@@ -30,9 +30,9 @@ void main()
       
       switch(count){
          case 1:
-            output_c(0x0f);
+            output_d(0x0f);
             delay_ms(100);
-            output_c(0xf0);
+            output_d(0xf0);
             delay_ms(100);
             break;
          case 2:

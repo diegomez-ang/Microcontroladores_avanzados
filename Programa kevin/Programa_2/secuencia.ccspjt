@@ -1,0 +1,38 @@
+[PROJECT]
+Target=secuencia.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=secuencia.c
+[secuencia.c]
+Type=4
+[mru-list]
+1=secuencia.c
+
+[Opened Files]
+1=..\..\Programa Diego\2do programa\cc_compiler\Pulsador.c
+2=secuencia.c
+3=
+
+[ProjectLog]
+Days=1
+D1=04-03-2021
+D1_L=10
+D1_L1=[67375]Stopped Editing.
+D1_L2=[67379]Started Editing.
+D1_L3=[68652]Stopped Editing.
+TotalEdit=47
+TotalDebug=0
+D1_E=47
+D1_D=0
+D1_L4=[68652]Project Closed.
+D1_L5=[68742]Project Opened.
+D1_L6=[68924]Started Editing.
+D1_L7=[68949]Stopped Editing.
+D1_L8=[68982]Started Editing.
+D1_L9=[69326]Stopped Editing.
+D1_L10=[69326]Project Closed.
+[Units]
+Count=1
+1=secuencia (main)
