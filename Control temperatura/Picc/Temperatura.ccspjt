@@ -13,14 +13,14 @@ Type=4
 [ProjectLog]
 Days=1
 D1=13-04-2021
-D1_L=12
+D1_L=13
 D1_L1=[39250]Started Editing.
 D1_L2=[39559]Stopped Editing.
 D1_L3=[39629]Started Editing.
 D1_L4=[39636]Stopped Editing.
-TotalEdit=2
+TotalEdit=67
 TotalDebug=0
-D1_E=2
+D1_E=67
 D1_D=0
 D1_L5=[39666]Started Editing.
 D1_L6=[39674]Stopped Editing.
@@ -30,6 +30,7 @@ D1_L9=[41967]Started Editing.
 D1_L10=[43847]Stopped Editing.
 D1_L11=[44771]Started Editing.
 D1_L12=[46456]Stopped Editing.
+D1_L13=[47429]Project Closed.
 
 [Opened Files]
 1=..\..\..\..\..\..\Desktop\Step_motor\step_motor_2.c
