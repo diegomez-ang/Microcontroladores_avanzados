@@ -34,11 +34,11 @@ ROM Allocation:
 000101  @cinit2
 
 Project Directory:
-    C:\Users\E531\Desktop\Picc\Programa Diego\ccompiler\
+    C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Programa Diego\ccompiler\
 
 Project Files:
-    secuencias.c                                            [24-feb.-21 11:47  CRC=ACE33DDA]
-    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
+    secuencias.c                                            [31-mar.-21 15:17  CRC=ACE33DDA]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
 
 Source signature=4B323708
 

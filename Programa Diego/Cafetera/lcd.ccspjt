@@ -1,0 +1,72 @@
+[PROJECT]
+Target=lcd.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=lcd.c
+[lcd.c]
+Type=4
+[mru-list]
+1=lcd.c
+
+[ProjectLog]
+Days=5
+D1=11-03-2021
+D1_L=11
+D1_L1=[69544]Started Editing.
+D1_L2=[69845]Stopped Editing.
+D1_L3=[70073]Started Editing.
+D1_L4=[70435]Stopped Editing.
+D1_L5=[70903]Started Editing.
+D1_L6=[72389]Stopped Editing.
+D1_L7=[72541]Started Editing.
+D1_L8=[73214]Stopped Editing.
+D1_L9=[74126]Started Editing.
+D1_L10=[74427]Stopped Editing.
+TotalEdit=32
+TotalDebug=0
+D1_E=28
+D1_D=0
+D1_L11=[78180]Project Closed.
+D2=18-03-2021
+D2_L=13
+D2_L1=[54975]Project Opened.
+D2_L2=[55042]Started Editing.
+D2_L3=[55128]Project Closed.
+D2_L4=[59704]Project Opened.
+D2_L5=[59825]Project Opened.
+D2_L6=[59886]Started Editing.
+D2_L7=[60412]Stopped Editing.
+D2_L8=[60464]Started Editing.
+D2_L9=[60469]Stopped Editing.
+D2_E=4
+D2_D=0
+D2_L10=[61042]Started Editing.
+D2_L11=[63557]Stopped Editing.
+D2_L12=[71746]Started Editing.
+D2_L13=[72138]Project Closed.
+D3=29-03-2021
+D3_L=2
+D3_L1=[79184]Project Opened.
+D3_L2=[80581]Project Closed.
+D4=31-03-2021
+D4_L=1
+D4_L1=[36538]Project Opened.
+D5=06-04-2021
+D5_L=5
+D5_L1=[41965]Project Opened.
+D5_L2=[42030]Project Closed.
+D5_L3=[42057]Project Opened.
+D5_L4=[42079]Started Editing.
+D5_L5=[42083]Project Closed.
+
+[Opened Files]
+1=..\Motor_pasoApaso\Step_motor.c
+2=..\Motor_pasoApaso\lcd_2D.c
+3=lcd.c
+4=..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd_2D.c
+5=
+[Units]
+Count=1
+1=lcd (main)

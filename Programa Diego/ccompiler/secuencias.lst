@@ -1,6 +1,6 @@
-CCS PCM C Compiler, Version 5.025, 11345               24-feb.-21 11:48
+CCS PCM C Compiler, Version 5.025, 51760               31-mar.-21 15:17
 
-               Filename:   C:\Users\E531\Desktop\Picc\Programa Diego\ccompiler\secuencias.lst
+               Filename:   C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Programa Diego\ccompiler\secuencias.lst
 
                ROM used:   310 words (4%)
                            Largest free fragment is 2048
@@ -29,7 +29,7 @@ CCS PCM C Compiler, Version 5.025, 11345               24-feb.-21 11:48
 ....................  
 .................... #list 
 ....................  
-.................... #fuses HS, NOWDT, BROWNOUT, NOLVP 
+.................... #fuses XT, NOWDT, BROWNOUT, NOLVP 
 .................... #use delay (clock = 4000000) 
 0004:  MOVLW  23
 0005:  MOVWF  04
@@ -449,4 +449,4 @@ CCS PCM C Compiler, Version 5.025, 11345               24-feb.-21 11:48
 0135:  SLEEP
 
 Configuration Fuses:
-   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT
+   Word  1: 3F71   XT NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

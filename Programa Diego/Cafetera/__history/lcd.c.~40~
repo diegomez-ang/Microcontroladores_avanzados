@@ -1,0 +1,63 @@
+#include <16f877a.h>
+#fuses XT, NOPROTECT, NOWRT, NOPUT, NOWDT, NOLVP, NOCPD 
+#use delay (clock=4000000)
+#include <lcd_2.c>  // Librería para el manejo del lcd  
+#include <kbd_2D.c>
+#byte port_a=5
+#byte port_b=6
+#byte port_c=7
+#byte port_d=8
+
+char k;
+
+
+void menu(){  //// Menu principal
+      lcd_gotoxy(3,1);
+      lcd_putc("ELIJA UNA OPCION");
+      lcd_gotoxy(1,2);
+      lcd_putc("1-Tinto");
+      lcd_gotoxy(10,2);
+      lcd_putc("4-Capuchino");
+      lcd_gotoxy(21,1);
+      lcd_putc("2-Agua");
+      lcd_gotoxy(30,1);
+      lcd_putc("5-Expreso");
+      lcd_gotoxy(30,2);
+      lcd_putc("6-Americano");
+      lcd_gotoxy(21,2);
+      lcd_putc("3-Te");
+      }
+void tinto(){
+      lcd_putc("\f");
+      lcd_gotoxy(3,1);
+      lcd_putc("Preparando tinto");
+         
+      }
+
+void main(void)
+{
+
+   /*int i = 0;
+   int contador = 0;
+ */
+   lcd_init(); //inicializa lcd 
+
+   while(TRUE){ 
+   
+      
+      k=kbd_getc();
+      if(k!=0){
+         if(k == '0'){
+            menu();
+            }
+         if(k == '1'){  
+            tinto();            
+            }
+      }
+      
+      
+}
+}
+    
+
+

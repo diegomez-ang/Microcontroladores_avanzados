@@ -1,0 +1,25 @@
+[PROJECT]
+Target=LCD.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=LCD.c
+[LCD.c]
+Type=4
+[mru-list]
+1=LCD.c
+[Units]
+Count=1
+1=LCD (main)
+
+[ProjectLog]
+Days=1
+D1=11-03-2021
+D1_L=2
+D1_L1=[42070]Started Editing.
+D1_L2=[42459]Stopped Editing.
+
+[Opened Files]
+1=LCD.c
+2=

@@ -1,0 +1,173 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+005     lcd_a
+005     port_a
+006     port_b
+006     kbd_port_b
+006     lcd_b
+007     port_c
+008     port_d
+008     PSP_DATA
+009.0   lcd_rs
+009.1   lcd_rw
+009.2   lcd_enable
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-027 conv_1
+028-029 conv_2
+02A-02B conv_3
+02C-02F volt_1
+030-033 volt_2
+034-037 volt_3
+038-039 temp_1
+03A-03B temp_2
+03C-03D temp_3
+03E-041 @PRINTF_L32D_910FPFPF.P1
+03E-03F @PRINTF_LD_910.P2
+03E-03F @ITOF.P3
+03E-041 @SFTOI.P4
+03E     lcd_init.i
+03E     @PSTRINGCN7_910.P1
+03E     show_temp.@SCRATCH1
+03E     @PSTRINGC7_910.@SCRATCH1
+03F     show_temp.@SCRATCH2
+03F     @PSTRINGC7_910.@SCRATCH2
+03F     @PSTRINGCN7_910.@SCRATCH1
+040     show_temp.@SCRATCH3
+040     @PSTRINGC7_910.@SCRATCH3
+040     @PRINTF_LD_910.@SCRATCH1
+040     @PSTRINGCN7_910.@SCRATCH2
+041     show_temp.@SCRATCH4
+041     @PSTRINGC7_910.@SCRATCH4
+041     @PRINTF_LD_910.@SCRATCH2
+041     @PSTRINGCN7_910.@SCRATCH3
+042     @PRINTF_L32D_910FPFPF.P1
+042-045 @DIVFF.P2
+042     @PRINTF_LD_910.@SCRATCH3
+042     @PSTRINGCN7_910.@SCRATCH4
+043     @PRINTF_LD_910.@SCRATCH4
+043     @PRINTF_L32D_910FPFPF.@SCRATCH1
+044     @PRINTF_LD_910.@SCRATCH5
+044     @PRINTF_L32D_910FPFPF.@SCRATCH2
+045     @PRINTF_LD_910.@SCRATCH6
+045     @PRINTF_L32D_910FPFPF.@SCRATCH3
+046-049 @DIVFF.P1
+046     @PRINTF_LD_910.@SCRATCH7
+046     @PRINTF_L32D_910FPFPF.@SCRATCH4
+047     @PRINTF_L32D_910FPFPF.@SCRATCH5
+048     @PRINTF_L32D_910FPFPF.@SCRATCH6
+049     @PRINTF_L32D_910FPFPF.@SCRATCH7
+04A     @DIVFF.@SCRATCH1
+04A     @PRINTF_L32D_910FPFPF.@SCRATCH8
+04B     lcd_putc.c
+04B-04E @DIV3232.P1
+04B-04E @FTOSD.P2
+04B-04E @MULFF.P3
+04B     @DIVFF.@SCRATCH2
+04C     @delay_ms1.P1
+04C     lcd_gotoxy.x
+04C     @DIVFF.@SCRATCH3
+04D     lcd_gotoxy.y
+04D     @DIVFF.@SCRATCH4
+04E     lcd_gotoxy.dir
+04E     @DIVFF.@SCRATCH5
+04F-052 @MULFF.P1
+04F-052 @DIV3232.P2
+04F     @DIVFF.@SCRATCH6
+04F     lcd_gotoxy.@SCRATCH1
+04F     @FTOSD.@SCRATCH1
+050     lcd_enviar.dir
+051     lcd_enviar.valor
+052     lcd_leer.valor
+052     lcd_enviar.@SCRATCH1
+053     @MULFF.@SCRATCH1
+053     @DIV3232.@SCRATCH1
+054     @MULFF.@SCRATCH2
+054     @DIV3232.@SCRATCH2
+055     @MULFF.@SCRATCH3
+055     @DIV3232.@SCRATCH3
+056     @MULFF.@SCRATCH4
+056     @DIV3232.@SCRATCH4
+057     @MULFF.@SCRATCH5
+057     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const944.call
+00000D  @const946.call
+000018  @const960.call
+000023  @delay_ms1
+000038  lcd_enviar
+00003E  lcd_leer
+000071  lcd_init
+00009E  @ITOF
+0000BB  @MULFF
+000130  @DIVFF
+0001FA  @SFTOI
+000219  lcd_gotoxy
+00022B  lcd_putc
+00024F  @PRINTF_LD_910
+0002CF  @PSTRINGCN7_910
+000326  @DIV3232
+000375  @PRINTF_L32D_910FPFPF
+00039C  @FTOSD
+000455  show_temp
+000585  @PSTRINGC7_910
+000688  @cinit1
+000688  MAIN
+000692  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Control temperatura\Picc\
+
+Project Files:
+    Temperatura.c                                           [13-abr.-21 12:49  CRC=E034E059]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877a.h [18-abr.-14 16:56  CRC=4F277C97]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun.-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [10-abr.-14 09:04  CRC=662B2714]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd_2D_puertoE.c [13-abr.-21 10:59  CRC=06AAC662]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\kbd_2D.c [08-abr.-21 12:56  CRC=1387C8B5]
+
+Source signature=854433AA
+
+Units:
+    Temperatura (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Temperatura.xsym
+    Errors:      Temperatura.err
+    Ext Symbols: Temperatura.esym
+    INHX8:       Temperatura.hex
+    Symbols:     Temperatura.sym
+    List:        Temperatura.lst
+    Debug/COFF:  Temperatura.cof
+    Project:     Temperatura.ccspjt
+    Call Tree:   Temperatura.tre
+    Statistics:  Temperatura.STA

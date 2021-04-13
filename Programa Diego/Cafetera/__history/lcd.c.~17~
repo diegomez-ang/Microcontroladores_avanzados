@@ -1,0 +1,34 @@
+#include <16f877a.h>
+#fuses XT, NOPROTECT, NOWRT, NOPUT, NOWDT, NOLVP, NOCPD 
+#use delay (clock=4000000)
+#include <lcd.c>  // Librería para el manejo del lcd              
+
+
+
+void main(void)
+{
+   int contador = 0;
+   int i = 0;
+   lcd_init(); //inicializa lcd 
+
+   while(TRUE){ 
+      lcd_gotoxy(3,1) ; 
+      lcd_putc("DIEGO ALEJANDRO" ) ; 
+      lcd_gotoxy(3,2) ; 
+      lcd_putc("GOMEZ ANGARITA" ) ; 
+      lcd_gotoxy(25,1) ; 
+      lcd_putc("CONTADOR" ) ; 
+      
+      for(i=0;i<60; i++){
+         contador++;
+         lcd_gotoxy(25,2) ; 
+         lcd_putc(contador) ;
+         delay_ms(500);
+         
+      }
+      
+      
+      
+      
+}
+}

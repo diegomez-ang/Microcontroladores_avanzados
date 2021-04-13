@@ -1,0 +1,73 @@
+
+ROM used:   1706/8192 (21%)
+            1706/8192 (21%) including unused fragments
+
+            0.6 Average locations per line
+            2.8 Average locations per statement
+
+RAM used:   35/368 (10%) at main() level
+            61/368 (17%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   64    30   5  Temperatura.c
+  672     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877a.h
+ 1351   359  60  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+  423   125  21  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   28     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+  143    61  10  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd_2D_puertoE.c
+   69    24   4  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\kbd_2D.c
+----- -----
+ 2782   599 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   1    1             @delay_ms1
+0    117   7   13             @MULFF
+0     29   2    2             @ITOF
+0    202  12   14             @DIVFF
+ Inline         1    236  2.3  lcd_leer
+0     57   3    3    388  2.9  lcd_enviar
+0     45   3    1    420  3.8  lcd_init
+0     18   1    4    186  5.5  lcd_gotoxy
+0     36   2    1    272  4.1  lcd_putc
+0    563  33    4    954  3.3  show_temp
+0     31   2    4    223  1.8  @SFTOI
+0      9   1    0             @const944
+ Inline         4             @PSTRINGC7_910
+0     11   1    0    100  1.7  @const946
+0    128   8    9    100  1.7  @PRINTF_LD_910
+0     87   5    5    100  1.7  @PSTRINGCN7_910
+ Inline         5    100  1.7  @FTOSD
+0     79   5   13             @DIV3232
+0    224  13   13    100  1.7  @PRINTF_L32D_910FPFPF
+0     11   1    0    100  1.7  @const960
+0     34   2    0    100  1.7  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               14
+    Statements              599
+    Comments                935
+    Volume (V)              5728
+    Difficulty (D)          34.8
+    Effort to implement (E) 199185
+    Time to implement (T)   3 hours, 4 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   6
+    Maintainability (MI)    83
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1702  342  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

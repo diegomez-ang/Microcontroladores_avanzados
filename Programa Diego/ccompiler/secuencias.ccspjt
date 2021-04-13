@@ -15,7 +15,7 @@ Type=4
 2=
 
 [ProjectLog]
-Days=1
+Days=3
 D1=24-02-2021
 D1_L=5
 D1_L1=[41698]Stopped Editing.
@@ -23,6 +23,26 @@ D1_L2=[41838]Started Editing.
 D1_L3=[42741]Stopped Editing.
 D1_L4=[51281]Started Editing.
 D1_L5=[51664]Project Closed.
+D2=31-03-2021
+D2_L=9
+D2_L1=[52862]Project Opened.
+D2_L2=[52870]Started Editing.
+D2_L3=[52933]Stopped Editing.
+TotalEdit=8
+TotalDebug=0
+D2_E=8
+D2_D=0
+D2_L4=[53206]Started Editing.
+D2_L5=[53381]Stopped Editing.
+D2_L6=[53477]Started Editing.
+D2_L7=[53673]Project Closed.
+D2_L8=[55039]Project Opened.
+D2_L9=[59698]Project Closed.
+D3=06-04-2021
+D3_L=3
+D3_L1=[39188]Project Opened.
+D3_L2=[39358]Started Editing.
+D3_L3=[40111]Project Closed.
 [Units]
 Count=1
 1=secuencias (main)

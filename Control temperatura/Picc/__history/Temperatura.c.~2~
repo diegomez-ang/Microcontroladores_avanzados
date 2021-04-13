@@ -1,0 +1,36 @@
+#include <16f877a.h>
+#device adc = 10 //crea conversor 
+#fuses XT, NOWDT
+#use delay (clock=4000000)//cristal
+#include <stdlib.h>
+#include <lcd_2D.c>  // Librería para el manejo del lcd  
+#include <kbd_2D.c>
+#byte port_a=5
+#byte port_b=6
+#byte port_c=7
+#byte port_d=8
+
+void menu(){  //// Menu principal----------------------------------------------
+       lcd_gotoxy(3,1);
+       lcd_putc("-MENU PRINCIPAL-");
+       lcd_gotoxy(1,2);
+       lcd_putc("--------------------");
+       lcd_gotoxy(21,1);
+       lcd_putc("A- Ingresar # grados");
+       lcd_gotoxy(21,2);
+       lcd_putc("B- Secuencias");        
+      }
+      
+      
+void main(void)
+{
+
+   
+   lcd_init(); //inicializa lcd 
+   menu();
+
+   while(TRUE){   
+      
+     
+     }
+}

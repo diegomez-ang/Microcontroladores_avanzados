@@ -1,0 +1,167 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+005     port_a
+006     port_b
+006     kbd_port_b
+006     lcd
+007     port_c
+008     PSP_DATA
+008     port_d
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     lcdline
+021     k
+022     te.i
+022     lcd_init.i
+022     kbd_getc.tecla
+022     agua.i
+022     expreso.i
+022     tinto.i
+022     capuchino.i
+022     americano.i
+023     kbd_getc.f
+023     lcd_init.@SCRATCH1
+023     @PSTRINGC7_651.@SCRATCH1
+023     tinto.@SCRATCH1
+023     agua.@SCRATCH1
+023     te.@SCRATCH1
+023     capuchino.@SCRATCH1
+023     expreso.@SCRATCH1
+023     americano.@SCRATCH1
+024     kbd_getc.c
+024     @PSTRINGC7_651.@SCRATCH2
+025     kbd_getc.t
+025     @PSTRINGC7_651.@SCRATCH3
+026     kbd_getc.i
+026     lcd_putc.c
+026     @PSTRINGC7_651.@SCRATCH4
+027     lcd_gotoxy.x
+027     kbd_getc.j
+028     @delay_ms1.P1
+028     lcd_gotoxy.y
+028     kbd_getc.@SCRATCH1
+029     lcd_gotoxy.address
+02A     lcd_send_byte.address
+02B     lcd_send_byte.n
+02C     lcd_read_byte.low
+02C     lcd_send_byte.@SCRATCH1
+02D     lcd_read_byte.high
+02D     lcd_send_nibble.n
+02E     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  KEYS.call
+000010  KEYS.data
+000020  @const675.call
+000029  @const677.call
+00002D  @const678.call
+000033  @const679.call
+000037  @const680.call
+00003C  @const681.call
+000042  @const682.call
+000045  @const684.call
+000046  @const686.call
+00004F  @const687.call
+000050  @const688.call
+000051  @const689.call
+00005A  @const690.call
+00005B  @const692.call
+00005C  @const694.call
+000064  @const695.call
+000065  @const696.call
+000066  @const697.call
+00006F  @const698.call
+000070  @const700.call
+000071  @const702.call
+000078  @const703.call
+000079  @const704.call
+00007A  @const705.call
+000083  @const706.call
+000084  @const708.call
+000085  @const710.call
+000090  @const711.call
+000091  @const712.call
+000092  @const713.call
+00009B  @const714.call
+00009C  @const716.call
+00009D  @const718.call
+0000A7  @const719.call
+0000A8  @const720.call
+0000A9  @const721.call
+0000B2  @const722.call
+0000B3  @const724.call
+0000B4  @const726.call
+0000BF  @const727.call
+0000C0  @const728.call
+0000C1  @const729.call
+0000CA  @const730.call
+0000CB  @delay_ms1
+0000E0  lcd_send_nibble
+0000EC  lcd_send_byte
+0000ED  lcd_read_byte
+000126  lcd_init
+000152  kbd_getc
+0001A3  lcd_gotoxy
+0001BD  @goto10607
+0001C5  lcd_putc
+0001EC  @PSTRINGC7_651
+000242  menu
+000297  tinto
+0002E8  agua
+000339  te
+00038A  capuchino
+0003DB  expreso
+00042A  americano
+00047B  @cinit1
+00047B  MAIN
+000485  @cinit2
+
+Project Directory:
+    C:\Users\diego.gomez\Documents\Diego\Micros_avanzados\Microcontroladores_avanzados\Programa Diego\Cafetera\
+
+Project Files:
+    lcd.c                                                   [06-abr.-21 11:39  CRC=08920C73]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877a.h [18-abr.-14 16:56  CRC=4F277C97]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd_2.c [14-abr.-09 10:58  CRC=C5A307B3]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\kbd_2D.c [06-abr.-21 11:23  CRC=1387C8B5]
+
+Source signature=446C2227
+
+Units:
+    lcd (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   lcd.xsym
+    Errors:      lcd.err
+    Ext Symbols: lcd.esym
+    INHX8:       lcd.hex
+    Symbols:     lcd.sym
+    List:        lcd.lst
+    Debug/COFF:  lcd.cof
+    Project:     lcd.ccspjt
+    Call Tree:   lcd.tre
+    Statistics:  lcd.STA
